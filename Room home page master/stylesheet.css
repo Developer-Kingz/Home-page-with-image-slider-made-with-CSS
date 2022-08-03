@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainbody {
+    width: 100%;
+    height: 655px;
+    /* border: 1px solid black; */
+    background-color: #dde4f0;
+    display: flex;
+    justify-content: center;
+}
+
+.centerbody {
+    width: 80%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.centerbody .up {
+    width: 100%;
+    height: 64%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.slideshow {
+    /* width: 60%;
+    height: 100%; */
+    width: 700px;
+    height: 419px;
+    /* border: 1px solid black; */
+    background: url(./images/desktop-image-hero-1.jpg) 0 0 no-repeat,
+                url(./images/desktop-image-hero-2.jpg) 700px 0 no-repeat,
+                url(./images/desktop-image-hero-3.jpg) 1400px 0 no-repeat;
+    animation: slide-right 15s forwards 1s;            
+    background-size: cover;
+    
+}
+
+@keyframes slide-right {
+    0% {
+      background-position: 0 0, 700px 0, 1400px 0, 2100px 0
+    }
+    16%, 33% {
+     background-position: -700px 0, 0 0, 700px 0, 1400px
+    }
+
+    49%, 66% {
+     background-position: -1400px 0, -700px 0, 0 0, 700px 0      
+    }
+}
+
+.slideshow .navigation {
+    width: 58%;
+    height: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.slideshow .navigation .logo {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+
+.slideshow .navigation .nav {
+    width: 75%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.slideshow .navigation .nav ul {
+    list-style: none;
+    width: 70%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.slideshow .navigation .nav ul li {
+    display: inline;
+}
+
+.slideshow .navigation .nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.centerbody .up .right {
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    
+}
+
+.centerbody .up .right .arrow {
+    width: 24%;
+    height: 12%;
+    /* border: 1px solid black; */
+    background-color: black;
+    position: absolute;
+    /* transform: translateY(179px);
+    transform: translateX(-60px); */
+    transform: translate(-157px, 184px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.centerbody .up .right .arrow .arrow-container {
+    width: 80%;
+    height: 40%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.centerbody .up .right .discover-box {
+    width: 80%;
+    height: 55%;
+    /* border: 1px solid black; */
+    font-size: 16px;
+    
+}
+
+.centerbody .up .right .discover-box h5 {
+    letter-spacing: 4px;
+    
+}
+
+.centerbody .down {
+    width: 100%;
+    height: 36%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.centerbody .down .first {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.centerbody .down .first img {
+    width: 100%;
+    height: 100%;
+}
+
+.centerbody .down .second {
+    width: 41%;
+    height: 100%;
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerbody .down .second .about-box {
+    width: 85%;
+    height: 65%;
+    /* border: 1px solid black; */
+    font-size: 16px;
+}
+
+.centerbody .down .third {
+    width: 29%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.centerbody .down .third img {
+    width: 100%;
+    height: 100%;
+}
